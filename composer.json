@@ -6,6 +6,11 @@
         "framework",
         "laravel"
     ],
+    
+    "post-install-cmd": [
+        "php artisan clear-compiled",
+        "chmod -R 777 public/"
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.2.5|^8.0",
@@ -61,4 +66,6 @@
             "@php artisan key:generate --ansi"
         ]
     }
+
+   
 }
